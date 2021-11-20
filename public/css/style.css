@@ -1,0 +1,81 @@
+.fa{
+    color:gray;
+}
+.fa-heart{
+    color:red;
+}
+.add{
+    float: left;
+}
+.delete{
+    float: right;
+}
+.card{
+box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.3); 
+margin-left:4vw;
+margin-top:5vh;
+height: auto;
+}
+.card-title{
+  font-size: 1em;
+}
+.card-link {
+color:black;
+}
+.card-body{
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+      }
+.form-group input[type=text]{
+    width:16vw;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    border:2px solid #aaa;
+    /* overflow-x: hidden; */
+    outline: none;
+    border-radius:4px;
+}
+.form-group input[type=text]:focus{
+border-color:dodgerBlue;
+box-shadow:0 0 8px 0 dodgerBlue;
+}
+ .xyz{   
+  font-weight: bold;
+  text-align: center;
+  color:white;
+  background-color:rgb(46, 90, 173);
+  margin-left: 60vw;
+  box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.3); 
+  text-decoration: none;
+  padding: 8px 8px 8px 8px;
+}
+/* .card-img-top{
+   
+} */
+  .form-group{
+    margin-left: 3vw;
+    margin-top: 6vh;
+}
+.fa-search{
+    margin-left: -2.5vw;
+    color: lightgray;
+}
+ .container{
+  width:80%;
+  height: auto;
+  box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 10px 80px rgba(0, 0, 0, 0.12);
+  margin-left: 10vw;
+  margin-top:10vh;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}

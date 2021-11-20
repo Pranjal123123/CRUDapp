@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/from.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="/resource/edit-profile/<%=resource._id%>" method="POST" role="form" enctype="multipart/form-data">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Title</label>
+                 </div>
+                <div class="col-75">
+                  <input type="text" id="Title" name="title" value="<%=resource.title%>">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Author</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="Title" name="author" value="<%=resource.author%>">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Body</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="Body" name="body" value="<%=resource.body.substring(0, 20)%>">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Tags</label>
+                </div>
+                <div class="col-75">
+                    <input type="text"  name="tags" value="<%=resource.tags%>">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="image">Image</label>
+                </div>
+                <div class="col-75" style="margin-top: 3vh;">
+                    <input type="file" name="image" accept="image/png, image/jpg, image/jpeg">
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+    </main>
+    
+</body>
+</html>

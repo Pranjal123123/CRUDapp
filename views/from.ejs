@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/from.css">
+</head>
+<body>
+    <main> 
+        <div class="container">
+            <form action="/resource/create" method="POST" role="form" enctype="multipart/form-data"> 
+              <!-- enctype="multipart/form-data" -> we used this statement because multer require enctype from data -->
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Title</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="Title" name="title" placeholder="Title..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Author</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="Title" name="author" placeholder="Author name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Body</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="Body" name="body" placeholder="Body..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Tags</label>
+                </div>
+                <div class="col-75">
+                    <input type="text"  name="tags" placeholder="Tags...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="image">Image</label>
+                </div>
+                <div class="col-75" style="margin-top: 3vh;">
+                    <input type="file" name="image"  accept="image/png, image/jpg, image/jpeg">
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+    </main>
+    
+</body>
+</html>
